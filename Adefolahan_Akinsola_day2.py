@@ -11,4 +11,8 @@ def password_generator(val):
         randalpha = random.randrange(0,len(alphaNum))
         password += alphaNum[randalpha]
     print(password)
-password_generator(val)
+        
+if(val<8):
+    print("Weak Password, increase the length.")
+else:
+    password_generator(val)
